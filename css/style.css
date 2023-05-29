@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fffff0;
+    background: url(../img/fundo.png) repeat-x top left; 
+
+}
+a{
+    text-decoration: none;
+    color: #b06c14
+}
+
+/* Cabeçalho do site */
+
+header{
+    display: flex;
+    height: 200px;
+    justify-content: space-around;
+}
+
+#logo{
+    padding: 50px;
+}
+
+nav{
+    line-height: 130px;
+}
+
+#navegacao ul li{
+    list-style: none;
+    display: inline;    
+}
+
+#navegacao ul li a {
+    padding: 0 5px;
+}
+
+#navegacao ul li a:hover{
+    color: #fff;
+}
+
+/* Conteúdo do site */
+article{
+    width: 1080px;
+    margin: auto;
+    position: relative;
+    top: -110px
+}
+
+.museu{
+    width: 700px;
+    transition: all 1s ease;
+}
+
+.museu:hover{
+    transform: scale(1.03);    
+}
+
+.depoimento{
+    position: absolute;
+    right: 0;
+    width: 345px;
+    transition: all 1s ease;
+}
+
+.depoimento:hover{
+    transform: scale(1.03);
+}
+
+section{
+    margin: 20px;
+    float: left;
+}
+
+section h3{
+    color: green;
+    margin-bottom: 5px;
+}
+.frame{
+    width: 320px;
+}
+
+/* Galeria de Fotos */
+
+.fotos{
+    height: 470px;
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 5px;
+}
+.img-area{
+    height: 133px; 
+    width: 126px;
+    background: url(../img/fundo-foto.png);
+}
+.img-area img{
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
+aside{
+    width: 320px;
+    float: right;
+    margin-top: 20px;
+    background: #f5f5dc;
+    padding: 10px;
+}
+
+aside h3{
+    color: #b06c14;
+    padding-bottom: 5px;
+}
+
+aside input{
+    display: inline;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+aside input[type=number]{
+    width: 30px;
+}
+
+aside input[type=submit]{
+    height: 40px;
+    width: 320px;
+    background-color: #af9e88;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.exposicoes ul li{
+    margin-left: 40px;
+}
+
+.exposicoes ul li a{
+    font-size: 15px;
+}
+.exposicoes ul li a:hover{
+    color: black;
+}
+
+.historia p{
+    font-size: 15px;
+}
+
+.historia a:hover{
+    color: black;
+}
+
+/* Rodapé da pagina */
+
+footer{
+    clear: both;
+    background: url(../img/fundo-rodape.png) no-repeat top center;
+}
+.rodape-paginas{
+    display: flex;
+    justify-content: space-around;
+}
+.rodape-paginas ul{
+    margin-top: 40px;
+}
+.rodape-paginas ul li{
+    list-style: none;
+    display: inline;
+}
+
+.rodape-paginas ul li a{
+    padding: 20px;
+}
+
+.rodape-paginas ul li a:hover{
+    color: black;
+}
+
+.rodape-copyright{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.rodape-copyright a:hover{
+    color: black;
+}
